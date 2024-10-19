@@ -7,17 +7,16 @@
     margin: 0;
     padding:0 3rem;
     font-family: poppins;
+    color: white;
 
 }
 
 body{
-    height: 100%;
-    /* background-image:linear-gradient(to bottom right, rgb(181, 41, 194), yellow); */
-    /* background-image:linear-gradient(to bottom right,black, rgb(181 41, 194), black); */
-    background-color: purple;
-    background-image: radial-gradient(#fff,hsla(0,0%,100%,0));;
-    /* background-image:linear-gradient(to bottom right,black 10% ,rgb(181, 41, 194),rgb(0,120,180),rgb(36, 224, 93) ,black 80%); */
-    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    /* background-repeat: no-repeat; */
+    padding: 0;
 
 }
 
@@ -29,27 +28,29 @@ body{
 }
 
 nav{
+    width: 100%;
     display: flex;
     padding: 0;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     height: 15vh;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
     color: white;
+    padding: 0;
+    margin-top: 20px;
 }
 
 .hire{
     height: 50%;
-    width: 15%;
+    width: 175px;
     padding: 0;
     border-radius:20px ;
     color: white;
-    /* background-color: rgb(34, 43, 168); */
     background-image: linear-gradient(to bottom left,#14469f ,#da3068 );
     font-size: 1.1rem;
     font-weight: 500;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -86,31 +87,30 @@ a:hover:after{
 }
 
 
-
 .box{
-    height: auto;
-    padding: 0;
+    height: 80vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 1rem auto;
-
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
 }
 .info{
-    /* background-image: radial-gradient(purple 15%, rgb(82, 64, 133) 60%); */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
     flex-wrap: wrap;
     border: none;
     outline: none;
-    align-items:start;
+    box-shadow: 0 0 30px 5px aqua;
+    align-items:center;
     width: 50%;
     height: auto;
-    padding: 3em 0;
-    margin: 1rem 0;
-
+    padding: 0;
+    border-radius: 30px;
 }
 
 .cm, .cm img{
@@ -121,16 +121,22 @@ a:hover:after{
     background-color: blue;
     border-radius: 50%;
 }
+.cm{
+    box-shadow: 0 0 100px 5px;
+}
 
 .gs{
-    margin-left: 8%;
-    height: 7vh;
+    height: 50px;
     border-radius:50px ;
     border: none;
-    background-image: linear-gradient(to bottom right,#2c6f67,#12d66e,#224231);
+    background-color: aquamarine;
     color: black;
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 17px;
+    padding: 0;
+    width: 150px;
+    font-weight: 800;
+    cursor: pointer;
 }
 
 h1 span{
@@ -142,7 +148,5 @@ h1 span{
 
 .gs:hover{
     opacity: 0.8;
-
-
 
 }
